@@ -1,0 +1,86 @@
+/* Reset básico + boa prática */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* Card (onde o Box Model aparece forte) */
+.card {
+    background-color: white;
+
+    /* BOX MODEL */
+    padding: 20px;              /* espaço interno */
+    margin-bottom: 20px;        /* espaço entre os cards */
+    border: 2px solid #ddd;     /* borda */
+
+    border-radius: 8px;
+}
+
+/* Destaque */
+.destaque {
+    border-left: 6px solid #eb9c25;
+    border-right: 6px solid #eb9c25;
+    background-color: #ffec83;
+    padding: 30px
+}
+
+/* Título do card */
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* --- MAGAL'S CHANGE --- */
+.price_color {
+    font-weight: bold;
+    color: #2563eb;
+    margin-top: 5px
+}
+
+.golden_color { /* DESTAQUE DE FONTE */
+    color: #eb9c25;
+
+}
+
+.title_destacado {
+    color: white;
+    background-color: #6584b1;
+    border: 1px hidden #496081;
+    border-radius: 5px;
+
+    padding: 5px;
+}
+
+.golden_background { /* DESTAQUE DE FUNDO */
+    background-color: #eb9c25;
+    color: #fff8d1;
+}

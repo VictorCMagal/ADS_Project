@@ -1,0 +1,383 @@
+/* Reset básico + boa prática */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* Card (onde o Box Model aparece forte) */
+.card {
+    background-color: white;
+
+    /* BOX MODEL */
+    padding: 20px;              /* espaço interno */
+    margin-bottom: 20px;        /* espaço entre os cards */
+    border: 2px solid #ddd;     /* borda */
+
+    border-radius: 8px;
+}
+
+/* Hover */
+.card:hover {
+    background: #fafafa;
+}
+
+/* Destaque */
+.destaque {
+    border-left: 6px solid #eb9c25;
+    border-right: 6px solid #eb9c25;
+    background-color: #ffec83;
+    padding: 30px
+}
+
+/* Título do card */
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* --- MAGAL'S CHANGE --- */
+.price_color {
+    font-weight: bold;
+    color: #2563eb;
+    margin-top: 5px
+}
+
+.golden_color { /* DESTAQUE DE FONTE */
+    color: #eb9c25;
+
+}
+
+.title_destacado {
+    color: white;
+    background: linear-gradient(90deg, #1f2937, #3d587c);
+    /* background-color: #6584b1; */
+    border: 1px hidden #496081;
+    border-radius: 5px;
+
+    padding: 5px;
+}
+
+.golden_background { /* DESTAQUE DE FUNDO */
+    background-color: #eb9c25;
+    color: #fff8d1;
+}
+
+/* ----Menu Attach --------------------- */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #60a5fa;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    display: inline-block;
+}
+
+/* Conteúdo escondido */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: white;
+    min-width: 200px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    z-index: 10;
+}
+
+/* Links do dropdown */
+.dropdown-content a {
+    display: block;
+    color: #1f2937;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.dropdown-content a:hover {
+    background-color: #e5e7eb;
+    color: #2563eb;
+}
+
+/* Mostra o menu ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ----------- Banner com Flexbox ------------ */
+.banner {
+    width: 80%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.banner-texto {
+    flex: 1;
+}
+
+.banner-texto h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.banner-texto p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.banner-texto button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.banner-texto button:hover {
+    background-color: #1d4ed8;
+}
+
+.banner-imagem {
+    flex: 1;
+}
+
+.banner-imagem img {
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+/* ----------- Banner dos Planos ------------ */
+
+/* Flex centralizando */
+.container-planos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+/* Tabela */
+.tabela-planos {
+    width: 80%;
+    border-collapse: collapse;
+    background: #1f2937;
+    color: #f1f5f9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Cabeçalho com efeito gradiente */
+.tabela-planos thead {
+    background: linear-gradient(90deg, #1f2937, #3d587c);
+}
+
+.tabela-planos th {
+    padding: 15px;
+    border: 2px solid rgba(255,255,255,0.5);
+}
+
+/* Células */
+.tabela-planos td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+/* Linhas alternadas */
+.tabela-planos tbody tr:nth-child(even) {
+    background: #334155;
+}
+
+/* Hover */
+.tabela-planos tbody tr:hover {
+    background: #475569;
+}
+
+/* Rodapé */
+.tabela-planos tfoot {
+    background: #020617;
+}
+
+.tabela-planos tfoot td {
+    padding: 15px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+/* Preço */
+.tabela-planos td:nth-child(5) {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+/* Imagens */
+img {
+    width: 32;
+}
+
+/* Destaque do plano recomendado */
+.recomendado {
+    background: linear-gradient(90deg, #facc15, #f59e0b);
+    color: #000;
+    font-weight: bold;
+    transform: scale(1.03);
+}
+
+.recomendado td {
+    border: 2px solid #facc15;
+}
+
+/* Efeito ao passar mouse */
+.recomendado:hover {
+    background: linear-gradient(90deg, #fde047, #fbbf24);
+}
+
+/* ===== FORMULÁRIO ===== */
+/* Flex centralizando */
+.container-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.formulario {
+    background: #1e293b;
+    padding: 10px;
+    border-radius: 12px;
+    width: 60%;
+    color: #f1f5f9;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-titulo {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+/* Labels */
+.label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Inputs, select e textarea */
+.input,
+.select {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 6px;
+    width: 50%;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: #f1f5f9;
+    outline: none;
+    transition: 0.3s;
+}
+
+.textarea {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: #f1f5f9;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Foco */
+.input:focus,
+.select:focus,
+.textarea:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 5px #38bdf8;
+}
+
+/* Checkbox */
+.checkbox-group {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Botão */
+.botao {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 75%;
+    align-self: center;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover botão */
+.botao:hover {
+    background: linear-gradient(90deg, #2563eb, #0891b2);
+    transform: scale(1.05);
+}

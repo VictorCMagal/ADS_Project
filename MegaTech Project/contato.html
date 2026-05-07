@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaTech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>MegaTech</h1>
+        <p>Exemplo prático de qualidade em tecnologia!</p>
+        <br>
+
+
+        <nav class="menu">
+            <a href="index.html">Home</a>
+
+            <div class="dropdown">
+                <a href="servicos.html" class="dropbtn">Serviços ▾</a>
+
+                <div class="dropdown-content">
+                    <a href="servicos.html">Sites Institucionais</a>
+                    <a href="servicos.html">Design UI</a>
+                    <a href="servicos.html">Consultoria Web</a>
+                </div>
+            </div>
+
+            <a href="planos.html">Planos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+<div class="container-contato">    
+    <form class="formulario">
+
+    <h2 class="form-titulo">Contato</h2>
+
+    <label class="label">Nome:</label>
+    <input class="input" type="text" name="nome" id="" placeholder="Seu nome aqui." required><br>
+
+    <label class="label">Email:</label>
+    <input class="input" type="email" name="email" id="" placeholder="Campo de Email" required><br>
+
+    <label class="label">Telefone:</label>
+    <input class="input" type="tel" name="telefone" id="" placeholder="8888-8888" required><br>
+    
+    <label class="label">Serviço:</label>
+    <select class="select" name="servico" id="">
+        <option value="light">Web</option>
+        <option value="padrao">UI</option>
+        <option value="premium">Premium</option>
+        <option value="pro">PRO</option>
+    </select><br>
+        
+    <label class="label">Mensagem:</label>
+    <textarea class="textarea" type="mensagem" rows="5" cols="30" value="Escreva algo aqui."></textarea><br>
+
+<div class="checkbox-group">    
+    <label >Aceite os Termos:</label>    
+    <input type="checkbox" type="checkbox" name="checkbox" id="" required><label>YES!</label><br>
+</div>
+    
+    <button class="botao">Enviar</button>
+</div>
+    </form>
+
+    </main>
+
+    <footer class="rodape">
+        <p>© 2026 - MegaTech</p>
+    </footer>
+
+</body>
+</html>
